@@ -2,14 +2,18 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+
+<!-- IMPORTANTE PARA CELULAR -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Flores para ti</title>
 
 <style>
 
 body{
     margin:0;
-    height:100vh;
-    background: #6d5a6d;
+    min-height:100vh;
+    background:#6d5a6d;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -17,12 +21,13 @@ body{
     font-family: Arial;
     color:white;
     text-align:center;
+    padding:20px;
 }
 
 img{
-    width:350px;
+    width:100%;
+    max-width:350px;
     border-radius:10px;
-   
 }
 
 .frase{
@@ -31,18 +36,26 @@ img{
     max-width:500px;
 }
 
+/* Ajustes para teléfono */
+@media (max-width:600px){
+
+.frase{
+    font-size:18px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<!-- AQUÍ PUEDES CAMBIAR TU IMAGEN -->
 <img src="ramo3.png" alt="Ramo de flores">
 
 <div class="frase">
 Para una mujer increíble, estas flores son solo un pequeño reflejo de lo especial que eres. <br>
-FELIZ DÍA DE LA MUJER
+<strong>FELIZ DÍA DE LA MUJER</strong>
 </div>
 
 </body>
